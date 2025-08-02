@@ -1,32 +1,66 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <title>Подробнее о ROLLYWOOD</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <title>Подробнее о ROLLYWOOD</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <div class="content-container">
-        <div class="banner-container">
-            <img src="rollywood_banner.webp" alt="Логотип Rollywood" class="banner">
-        </div>
 
-        <div class="button-grid">
-            <button onclick="sendDataToBot('account')">Личный кабинет</button>
-            <button onclick="sendDataToBot('afisha')">Афиша</button>
-            <button onclick="sendDataToBot('about')">Подробнее о проекте Rollywood</button>
-            <button onclick="sendDataToBot('quest')">Сыграть бесплатно</button>
-            <button onclick="sendDataToBot('collection')">Золотая коллекция</button>
-            <button onclick="sendDataToBot('support')">Служба заботы</button>
-        </div>
-    </div>
+    <div class="content-container">
 
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        function sendDataToBot(data) {
-            window.Telegram.WebApp.sendData(data);
-        }
-    </script>
+        <div class="banner-container">
+
+            <img src="rollywood_banner.png" alt="Логотип Rollywood" class="banner">
+
+        </div>
+
+
+
+        <div class="button-grid">
+
+            <button onclick="sendDataToBot('account')">Личный кабинет</button>
+
+            <button onclick="sendDataToBot('afisha')">Афиша</button>
+
+            <button onclick="sendDataToBot('about')">Подробнее о проекте Rollywood</button>
+
+            <button onclick="sendDataToBot('quest')">Сыграть бесплатно</button>
+
+            <button onclick="sendDataToBot('collection')">Золотая коллекция</button>
+
+            <button onclick="sendDataToBot('support')">Служба заботы</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <script>
+
+        function sendDataToBot(data) {
+
+            window.Telegram.WebApp.sendData(data);
+
+        }
+
+    </script>
+
 </body>
+
+
+
 </html>
+
