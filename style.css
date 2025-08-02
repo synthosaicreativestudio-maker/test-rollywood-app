@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
-    padding-top: 70px; /* Отступ сверху для закрепленного баннера */
+    padding: 20px;
 }
 
 .content-container {
@@ -15,22 +15,20 @@ body {
 
 .banner-container {
     background-color: #000000;
-    width: 150%;
-    padding: 10px 0;
+    width: 100%;
+    padding: 5px 0;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
-    position: fixed; /* Закрепляем баннер */
-    top: 0; /* Приклеиваем к верху */
-    left: 0; /* Приклеиваем к левому краю */
-    z-index: 1000; /* Помещаем баннер поверх кнопок */
+    height: 60px;
+    position: sticky; /* Теперь используем sticky */
+    top: 0; /* Закрепляем на самом верху */
 }
 
 .banner {
-    width: 150%;
-    height: 100px;
+    width: auto;
+    height: 50px;
     display: block;
 }
 
@@ -38,7 +36,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px; /* Отступ, чтобы кнопки не заезжали под баннер */
 }
 
 .button-grid button {
@@ -62,6 +59,3 @@ body {
     background-color: #0056b3;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
-
-
-
