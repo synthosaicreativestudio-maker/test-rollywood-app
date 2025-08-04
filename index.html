@@ -28,7 +28,7 @@
         function sendDataToBot(data) {
             window.Telegram.WebApp.sendData(data);
         }
-
+        
         function confirmRestart() {
             if (confirm('Вы уверены, что хотите перезапустить бота?')) {
                 window.Telegram.WebApp.sendData('restart_bot');
